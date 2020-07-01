@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in from with facebook and google</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url("Nasim.jpg");
+            background-size: cover;
+        }
+        .wrap {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            font-family: sans-serif;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .wrap h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            width: 49%;
+            box-sizing: border-box;
+            border: none;
+            font-size: 1.3em;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+        button:nth-child(1) {
+            background-color: purple;
+        }
+        button:nth-child(2) {
+            background-color: green;
+
+        }
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .fa {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        form {
+            margin-top: 30px;
+        }
+        input[type=text],
+        input[type=password],
+        input[type=submit] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 17px;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid gray;
+        }
+        label {
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        input[type=submit] {
+            background-color: red;
+            border: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 15px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: orangered;
+
+        }
+        p {
+            text-align: center;
+
+        }
+        p a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>Log In With</h2>
+        <div class="social-media">
+            <button><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> Facebook</a></button>
+            <button><a href="https://www.google.com/webhp?authuser=2"><i class="fa fa-google"></i> Google</a></button>
+        </div>
+        <form>
+            <label>Username:</label><br>
+            <input type="text">
+            <label>Password:</label><br>
+            <input type="password">
+            <input type="submit" value="Log In">
+        </form>
+
+        <p>Not a Member??<a href="#">Sign up Now</a></p>
+
+    </div>
+</body>
+
+</html>
